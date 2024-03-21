@@ -1,0 +1,272 @@
+body {
+  font-size: 1.5rem;
+}
+h1,h2,h3 {
+  font-family: "poppins";
+  font-weight: 600px;
+
+  font-size: 2remrem;
+}
+p,ul{
+  font-family: "open sans";
+  font-weight: 400;
+}
+
+.fundo {
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+
+.topo {
+  background-color: hsl(193, 100%, 96%);
+  margin: -20px -10px -10px -10px;
+
+  padding: 0px;
+}
+.topo p{
+  font-weight: 700;
+}
+.fundo-topo {
+  background-image: url(../Aula_5/landing-page/images/bg-hero-desktop.svg);
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.nav {
+  display: flex;
+
+  width: 100%;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.grid img {
+  width: 100%;
+}
+button {
+  border-style: none;
+  padding: 10px 30px;
+
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 1px 1px 10px hsla(192, 100%, 9%, 0.699);
+}
+.nav img {
+  margin-top: 30px;
+}
+.nav button {
+  margin-right: 60px;
+  margin-top: 30px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
+}
+.botaoRosa {
+  background: hsl(322, 100%, 66%);
+  color: #fff;
+  box-shadow: 1px 1px 10px hsl(208, 11%, 55%);
+}
+
+.conversa img {
+  width: 100%;
+}
+
+.conversa {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px hsl(208, 11%, 55%);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: black;
+  width: 80%;
+  margin: 40px auto 0px auto;
+  padding: 10px;
+}
+.conversa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+.comunidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px 10px 10px;
+  border-radius: 10px;
+  color: #000000;
+  background: #fff;
+  box-shadow: 1px 1px 10px hsl(208, 11%, 55%);
+}
+.comunidade h3 {
+  padding: 0 500px 0 500px;
+}
+
+.card {
+  display: flex;
+  position: absolute;
+  margin-left: 20%;
+  margin-right: 30%;
+  justify-content: center;
+  z-index: 1;
+  bottom: 230px;
+  margin-right: 50%;
+  padding-bottom: 30px;
+}
+
+footer {
+  display: grid;
+  width: 100%;
+  background: #000000;
+  grid-template-columns: auto auto auto auto;
+  padding: 60px;
+  margin-top: 200px;
+  position: relative;
+}
+
+.redesSociais {
+  display: flex;
+  width: 100%;
+}
+.redesSociais img {
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 50%;
+  border-color: 5px solid #fff;
+}
+.localizacao::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 18px;
+  left: 30px;
+  display: inline-block;
+  background-image: url(../Aula_5/landing-page/images/icon-location.svg);
+}
+.telefone::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  left: 30px;
+  display: inline-block;
+  background-image: url(../Aula_5/landing-page/images/icon-phone.svg);
+}
+.email::before {
+  position: absolute;
+  margin-top: 5px;
+  content: "";
+  width: 20px;
+  height: 16px;
+  left: 30px;
+
+  display: inline-block;
+  background-image: url(../Aula_5/landing-page/images/icon-email.svg);
+}
+
+.card,
+section {
+  font-size: 1rem;
+}
+footer ul li {
+  list-style: none;
+  padding: 10px;
+  top: 40px;
+}
+.redesSociais img {
+  width: 80px;
+}
+
+@media (max-width: 1400px) {
+  .comunidade h3 {
+    padding: 0 400px 0 400px;
+  }
+  .card {
+    bottom: 240px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .comunidade h3 {
+    padding: 0 300px 0 300px;
+  }
+  .card {
+    bottom: 310px;
+  }
+  footer {
+    grid-template-columns: auto auto 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .comunidade h3 {
+    padding: 0 200px 0 200px;
+  }
+  .card {
+    bottom: 420px;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .comunidade h3 {
+    padding: 0 150px 0 150px;
+  }
+  .card {
+    bottom: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  .comunidade h3 {
+    padding: 0 150px 0 150px;
+  }
+  .card {
+    bottom: 600px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    margin-top: -40px;
+    margin-left: -80px;
+  }
+  .faq {
+    margin-left: -80px;
+  }
+}
+.faq li:hover,
+.info li:hover {
+  text-decoration: underline;
+  padding: 10px;
+  color: hsl(192, 95%, 85%);
+}
+.telefone,
+.email {
+  text-decoration: none;
+  color: #fff;
+}
+.telefone:hover,
+.email:hover {
+  text-decoration: underline;
+  color: hsl(192, 95%, 85%);
+}
+
+.botaoRosa:hover {
+  background: hsla(322, 55%, 58%, 0.808);
+}
